@@ -8,7 +8,6 @@ func main() {
 
 	app := fiber.New()
 
-
 	app.Get("/", func(c *fiber.Ctx) error {
 		err := c.SendString("API is running...")
 		return err
